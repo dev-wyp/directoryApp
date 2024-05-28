@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import MuiDrawer from '@mui/material/Drawer';
 import { Toolbar, IconButton, Typography, Badge, Divider, List, Box, Container, Breadcrumbs, Paper } from '@mui/material';
-import { Menu, ChevronLeft, Notifications, NavigateNext } from '@mui/icons-material';
+import { Menu, ChevronLeft, Notifications, NavigateNext, AccountCircle } from '@mui/icons-material';
 import { styled } from '@mui/material';
 import { mainListItems, secondaryListItems } from '../components/listItems';
 
@@ -99,6 +99,9 @@ const DashboardLayout = (props: any) => {
             <Badge badgeContent={4} color="secondary">
               <Notifications />
             </Badge>
+          </IconButton>
+          <IconButton color="inherit" sx={{ml: 2}}>
+            <AccountCircle />
           </IconButton>
         </Toolbar>
       </AppBar>

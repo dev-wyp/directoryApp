@@ -7,6 +7,9 @@ export default defineConfig({
   define: {
     _global: ({}),
   },
+  server: {
+    port: 3000,
+  },
   optimizeDeps: {
     include: [
       '@mui/icons-material',

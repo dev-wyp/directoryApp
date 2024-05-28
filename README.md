@@ -35,11 +35,19 @@ Ensure you have the following installed:
 ```sh
 git clone https://github.com/yourusername/directory-app.git
 cd directory-app
+```
 
+### Install Dependencies
+
+```sh
 npm install
 # or
 yarn install
+```
 
+### Run the Application
+
+```sh
 npm start
 # or
 yarn start

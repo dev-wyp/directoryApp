@@ -13,6 +13,9 @@ import HotelListing from './pages/admin/HotelListing.tsx';
 import Users from './pages/admin/Users.tsx';
 import Shops from './pages/admin/Shops.tsx';
 import UserCreate from './pages/admin/UserCreate.tsx';
+import SignIn from './pages/SignInPage.tsx';
+import DefaultLayout from './layout/DefaultLayout.tsx';
+import SignUp from './pages/SignUpPage.tsx';
 
 
 const mainRoute = [
@@ -104,6 +107,24 @@ const mainRoute = [
     meta: {
       title: 'Creaete User',
       header: 'Create User'
+    }
+  },
+  {
+    path: "/login",
+    element: SignIn,
+    layout: DefaultLayout,
+    meta: {
+      title: 'Sign In',
+      header: 'Sign In'
+    }
+  },
+  {
+    path: "/register",
+    element: SignUp,
+    layout: DefaultLayout,
+    meta: {
+      title: 'Sign Up',
+      header: 'Sign Up'
     }
   },
 ];
