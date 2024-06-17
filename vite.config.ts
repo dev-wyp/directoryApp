@@ -8,7 +8,10 @@ export default defineConfig({
     _global: ({}),
   },
   server: {
-    port: 3000,
+    host: true,
+    watch: {
+      usePolling: true
+    }
   },
   optimizeDeps: {
     include: [
